@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    
     <style>
         @import 'utilities.css';
 :root{
@@ -678,56 +678,58 @@ th {
     text-align: left;
 }
 
-.flex{
-    display:flex;
-}
-.items-center{
-    align-items:center;
-}
-.justify-between{
-    justify-content: space-between;
-}
-.btn{
-    padding:0.8rem 3rem;
-    font-size:1rem;
-    font-weight:600;
-    border:2px solid transparent;
-    outline:none;
-    cursor:pointer;
-    text-transform: uppercase;
-    transition:all .3s ease;
-    -webkit-transition:all .3s ease;
-    -moz-transition:all .3s ease;
-    -ms-transition:all .3s ease;
-    -o-transition:all .3s ease;
-}
-.btn-primary{
-    background:var(--primary);
-    color:var(--secondary);
-}
-.btn-primary:hover{
-    background:transparent;
-    border-color: var(--primary);
-    color:var(--primary);
-}
-.btn-secondary{
-    background:transparent;
-    color:var(--primary);
-    border-color:var(--primary);
-}
-.btn-secondary:hover{
-    background:var(--primary);
-    color:var(--secondary);
-}
-
-.flex-1{
-    flex:1;
-}
-.justify-center{
-    justify-content: center;
-}
+/* text */
 
 
+
+        .flex{
+            display:flex;
+        }
+        .items-center{
+            align-items:center;
+        }
+        .justify-between{
+            justify-content: space-between;
+        }
+        .btn{
+            padding:0.8rem 3rem;
+            font-size:1rem;
+            font-weight:600;
+            border:2px solid transparent;
+            outline:none;
+            cursor:pointer;
+            text-transform: uppercase;
+            transition:all .3s ease;
+            -webkit-transition:all .3s ease;
+            -moz-transition:all .3s ease;
+            -ms-transition:all .3s ease;
+            -o-transition:all .3s ease;
+        }
+        .btn-primary{
+            background:var(--primary);
+            color:var(--secondary);
+        }
+        .btn-primary:hover{
+            background:transparent;
+            border-color: var(--primary);
+            color:var(--primary);
+        }
+        .btn-secondary{
+            background:transparent;
+            color:var(--primary);
+            border-color:var(--primary);
+        }
+        .btn-secondary:hover{
+            background:var(--primary);
+            color:var(--secondary);
+        }
+        
+        .flex-1{
+            flex:1;
+        }
+        .justify-center{
+            justify-content: center;
+        }
     </style>
 </head>
 
@@ -985,30 +987,7 @@ th {
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-$('.slider').slick({
-    arrows:false,
-    dots:true,
-    appendDots:'.slider-dots',
-    dotsClass:'dots'
-});
-
-
-let hamberger = document.querySelector('.hamberger');
-let times = document.querySelector('.times');
-let mobileNav = document.querySelector('.mobile-nav');
-
-hamberger.addEventListener('click', function(){
-  mobileNav.classList.add('open');  
-});
-
-times.addEventListener('click', function(){
-    mobileNav.classList.remove('open');  
-});
-
-});
-    </script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
