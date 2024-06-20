@@ -987,7 +987,30 @@ th {
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./js/app.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                arrows:false,
+                dots:true,
+                appendDots:'.slider-dots',
+                dotsClass:'dots'
+            });
+            
+            
+            let hamberger = document.querySelector('.hamberger');
+            let times = document.querySelector('.times');
+            let mobileNav = document.querySelector('.mobile-nav');
+            
+            hamberger.addEventListener('click', function(){
+              mobileNav.classList.add('open');  
+            });
+            
+            times.addEventListener('click', function(){
+                mobileNav.classList.remove('open');  
+            });
+            
+            });
+    </script>
 </body>
 
 </html>
