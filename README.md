@@ -27,7 +27,7 @@ If you would like to get in touch, feel free to fill out the form below .
 
 ## Live Demo
 <h4>Click to the see the live demo of the website</h4>
-<a href="">see demo</a>
+<a href="https://riya922003.github.io/personalPortfolio/">see demo</a>
 
 ## Preview 
 <img width=390  src="https://i.ibb.co/KWQNFkZ/portfoli2.png"></img>
