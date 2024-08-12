@@ -87,10 +87,12 @@ header nav {
     padding:2rem 0;
 }
 header nav .branding{
-    margin-right:3rem;
+    margin-right:6rem;
 }
 .hero{
-    padding:3rem 0;
+    padding:5rem 0;
+    margin:10px;
+    
 }
 .hero .left img{
     width:400px;
@@ -123,6 +125,7 @@ header nav .branding{
 section{
     padding:6rem 0;
 }
+
 section.about .about-me-img{
     height:450px;
 }
@@ -605,6 +608,7 @@ footer .copyright{
 @media (max-width:576px){
     .hero{
         flex-direction: column;
+
     }
     header{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);
@@ -708,6 +712,7 @@ th {
         .btn-primary{
             background:var(--primary);
             color:var(--secondary);
+            border-radius:10px;
         }
         .btn-primary:hover{
             background:transparent;
@@ -729,6 +734,14 @@ th {
         }
         .justify-center{
             justify-content: center;
+        }
+        .hero {
+            margin:10px;
+            height:70%;
+        }
+        .logo{
+            object-fit: cover;
+            border-radius:50%;
         }
     </style>
 </head>
@@ -752,10 +765,10 @@ th {
             <div class="container">
                 <nav id="main-nav" class="flex items-center justify-between">
                     <div class="left flex items-center">
-                        <div class="branding">
-                           <p style="color:white">Personal-portfolio</p>
+                        <div style="float :left;" class="branding">
+                          <img class="logo" width=120 , height=120 src="logo.png" alt="">
                         </div>
-                        <div>
+                        <div style="margin-left:4rem;">
                             <a href="#">Home</a>
                             <a href="#about">About</a>
                             <a href="#services">Tech-Stack</a>
@@ -774,7 +787,7 @@ th {
                     <div class="right flex-1">
                         <h6>Riya Gupta</h6>
                         <h1>I’m a Creative <span>Designer</span></h1>
-                        <p>As a 3rd-year student pursuing a B.Tech in Computer Science, I have honed my skills both as a creative designer and a hardworking individual. My academic journey has been complemented by my passion for innovative design.</p>
+                        <p>As a 3rd-year student pursuing a B.Tech in Computer Science, I have honed my skills both as a creative designer and a hardworking individual.</p>
                         <div>
                             <a href="mynewresume.pdf"><button class="btn btn-secondary">DOWNLOAD CV</button></a>
                         </div>
